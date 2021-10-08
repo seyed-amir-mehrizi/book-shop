@@ -26,7 +26,7 @@ function BooksListContext(props) {
     }
     return (
         <div>
-            <BookList.Provider value={books , removeBook , addBook}>
+            <BookList.Provider value={{books , removeBook , addBook}}>
                 {props.children}
             </BookList.Provider>
         </div>
