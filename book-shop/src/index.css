@@ -89,3 +89,7 @@ input[type='submit']{
   border-radius: 8px;
   cursor: pointer;
 }
+
+h3{
+  text-align: center;
+}
