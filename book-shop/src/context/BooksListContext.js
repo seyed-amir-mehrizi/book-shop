@@ -2,7 +2,7 @@
 
 import React, { createContext, useState } from 'react';
 import {v4 as uuid} from 'uuid'
-export const BookList = createContext();
+export const BookListProvider = createContext();
 function BooksListContext(props) {
     const [books, setBook] = useState([
         {
@@ -26,9 +26,9 @@ function BooksListContext(props) {
     }
     return (
         <div>
-            <BookList.Provider value={{books , removeBook , addBook}}>
+            <BookListProvider.Provider value={{books , removeBook , addBook}}>
                 {props.children}
-            </BookList.Provider>
+            </BookListProvider.Provider>
         </div>
     )
 }

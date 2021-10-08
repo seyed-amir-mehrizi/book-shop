@@ -26,3 +26,42 @@ body {
 .navbar h1{
   margin: 10px 0;
 }
+
+.book-list li:hover{
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.book-list .title{
+font-weight: 800;
+color: black;
+font-size: 1.2em;
+}
+
+.book-list .authot{
+color: black;
+font-size: 0.9em;
+}
+.empty{
+  margin: 20px;
+  text-align: center;
+}
+.book-list{
+
+  margin: 20px;
+}
+.book-list ul{
+  padding:0 ;
+  list-style-type: none;
+}
+.book-list li{
+  background-color: #ffb703;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.book-list li:hover{
+ opacity: 0.7;
+ text-decoration: line-through;
+}

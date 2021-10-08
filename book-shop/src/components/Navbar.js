@@ -1,8 +1,8 @@
 import React , {useContext, useState} from 'react'
-import { BookList } from '../context/BooksListContext';
+import { BookListProvider } from '../context/BooksListContext';
 function Navbar() {
-    const {books} = useContext(BookList);
-    console.log("books : " , books);
+    const {books} = useContext(BookListProvider);
+
     return (
         <div className="navbar">
             <h1>
