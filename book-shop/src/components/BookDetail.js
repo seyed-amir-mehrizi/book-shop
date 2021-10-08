@@ -3,10 +3,13 @@ import React, { useContext } from 'react'
 import { BookListProvider } from '../context/BooksListContext';
 
 function BookDetail({ bookInfo }) {
-    const { removeBook } = useContext(BookListProvider);
+    // const { removeBook } = useContext(BookListProvider);
+    const { dispatch } = useContext(BookListProvider);
+
 
     const deleteBook = () => {
-        removeBook(bookInfo.id);
+        // removeBook(bookInfo.id);
+        dispatch({type : 'REMOVE_BOOK' , id : bookInfo.id})
     }
     return (
         <div>
