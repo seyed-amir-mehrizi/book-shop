@@ -18,7 +18,7 @@ function BooksListContext(props) {
     ]);
 
     const addBook = (title , author) => {
-        setBook([books] , {title , author , id : uuid()})
+        setBook([...books , {title , author , id : uuid()}])
     }
 
     const removeBook = (id) => {

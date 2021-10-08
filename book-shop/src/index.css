@@ -65,3 +65,27 @@ font-size: 0.9em;
  opacity: 0.7;
  text-decoration: line-through;
 }
+
+form{
+  padding: 20px;
+}
+
+input[type='text']{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background-color: #023047;
+  color: white;
+  border : 0;
+}
+input[type='submit']{
+
+  padding: 6px 20px;
+  display: block;
+  margin: 10px auto;
+  background: #eee;
+  border : 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
